@@ -1,14 +1,17 @@
 import 'dotenv/config';
-import { HardhatUserConfig } from 'hardhat/types';
-import 'hardhat-deploy';
-import '@nomiclabs/hardhat-ethers';
-import 'hardhat-deploy-ethers';
-import 'hardhat-gas-reporter';
+import {HardhatUserConfig} from 'hardhat/types';
+
+import '@nomicfoundation/hardhat-chai-matchers';
+import '@nomicfoundation/hardhat-ethers';
 import '@typechain/hardhat';
+import 'hardhat-gas-reporter';
 import 'solidity-coverage';
-import 'hardhat-tracer';
+
+import 'hardhat-deploy';
+import 'hardhat-deploy-ethers';
 import 'hardhat-deploy-tenderly';
-import { node_url, accounts, addForkConfiguration } from './utils/network';
+
+import {node_url, accounts, addForkConfiguration} from './utils/network';
 
 const config: HardhatUserConfig = {
 	solidity: {
@@ -48,9 +51,9 @@ const config: HardhatUserConfig = {
 			url: node_url('mainnet'),
 			accounts: accounts('mainnet'),
 		},
-		rinkeby: {
-			url: node_url('rinkeby'),
-			accounts: accounts('rinkeby'),
+		sepolia: {
+			url: node_url('sepolia'),
+			accounts: accounts('sepolia'),
 		},
 		kovan: {
 			url: node_url('kovan'),
@@ -71,22 +74,18 @@ const config: HardhatUserConfig = {
 		coinmarketcap: process.env.COINMARKETCAP_API_KEY,
 		maxMethodDiff: 10,
 	},
-	typechain: {
-		outDir: 'typechain',
-		target: 'ethers-v5',
-	},
 	mocha: {
 		timeout: 0,
 	},
 	external: process.env.HARDHAT_FORK
 		? {
-			deployments: {
-				// process.env.HARDHAT_FORK will specify the network that the fork is made from.
-				// these lines allow it to fetch the deployments from the network being forked from both for node and deploy task
-				hardhat: ['deployments/' + process.env.HARDHAT_FORK],
-				localhost: ['deployments/' + process.env.HARDHAT_FORK],
-			},
-		}
+				deployments: {
+					// process.env.HARDHAT_FORK will specify the network that the fork is made from.
+					// these lines allow it to fetch the deployments from the network being forked from both for node and deploy task
+					hardhat: ['deployments/' + process.env.HARDHAT_FORK],
+					localhost: ['deployments/' + process.env.HARDHAT_FORK],
+				},
+		  }
 		: undefined,
 
 	tenderly: {
