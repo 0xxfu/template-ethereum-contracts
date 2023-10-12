@@ -6,13 +6,19 @@
 yarn
 ```
 
+## DEV
+
+```
+npx hardhat trace --hash 0xTransactionHash --rpc https://url
+```
+
 ## TEST
 
 There are 3 flavors of tests: hardhat, dapptools and forge
 
 ### hardhat
 
-- One using hardhat that can leverage hardhat-deploy to reuse deployment procedures and named accounts:
+-   One using hardhat that can leverage hardhat-deploy to reuse deployment procedures and named accounts:
 
 ```bash
 yarn test
