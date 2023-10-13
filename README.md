@@ -6,7 +6,11 @@
 yarn
 ```
 
-## DEV
+## Trace transaction
+
+```
+cast run 0xTransactionHash --quick --rpc-url https://url
+```
 
 ```
 npx hardhat trace --hash 0xTransactionHash --rpc https://url
