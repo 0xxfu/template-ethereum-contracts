@@ -9,7 +9,7 @@ yarn
 ## Trace transaction
 
 ```
-cast run 0xTransactionHash --quick --rpc-url https://url
+cast run --quick --rpc-url https://url 0xTransactionHash
 ```
 
 ```
