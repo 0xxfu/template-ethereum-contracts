@@ -4,6 +4,7 @@
 
 ```bash
 yarn
+bun install
 ```
 
 ## Trace transaction

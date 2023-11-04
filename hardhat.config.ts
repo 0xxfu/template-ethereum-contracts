@@ -11,6 +11,7 @@ import 'hardhat-deploy';
 import 'hardhat-tracer';
 import 'hardhat-deploy-ethers';
 import 'hardhat-deploy-tenderly';
+import "@nomicfoundation/hardhat-foundry";
 
 import { node_url, accounts, addForkConfiguration } from './utils/network';
 
