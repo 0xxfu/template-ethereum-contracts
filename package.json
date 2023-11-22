@@ -53,6 +53,7 @@
     "fork:dev": "node ./_scripts.js fork:dev",
     "fork:node": "node ./_scripts.js fork:node",
     "fork:test": "node ./_scripts.js fork:test",
-    "tenderly:push": "node ./_scripts.js tenderly:push"
+    "tenderly:push": "node ./_scripts.js tenderly:push",
+    "clean": "rm -rf .ityfuzz .tmp artifacts build-info cache cache_forge out typechain-types"
   }
 }
