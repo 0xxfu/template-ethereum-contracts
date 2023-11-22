@@ -41,10 +41,10 @@ npx hardhat trace --hash 0xTransactionHash --rpc https://url
 
 ### Ityfuzz
 
-```
-blazo .
-```
+- Install [Blazo](https://github.com/0xxfu/blazo)
+- Install [Ityfuzz](https://github.com/fuzzland/ityfuzz)
+- Run:
 
 ```
-ityfuzz evm --builder-artifacts-file ./results.json -t "a" --work-dir ./.ityfuzz --setup-file src/SetUp/SetupSimpleERC20.sol:SetupSimpleERC20
+blazo . -s -p -f src/SetUp/SetupSimpleERC20.sol:SetupSimpleERC20
 ```
