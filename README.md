@@ -8,7 +8,7 @@ yarn
 
 ## Test
 
-There are 3 flavors of tests: hardhat, dapptools and forge
+There are 2 flavors of tests: hardhat, dapptools and forge
 
 ### hardhat
 
