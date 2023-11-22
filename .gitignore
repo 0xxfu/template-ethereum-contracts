@@ -26,3 +26,4 @@ cache_forge
 .ityfuzz
 .tmp
 build-info
+results.json
