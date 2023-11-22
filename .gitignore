@@ -22,3 +22,7 @@ deployments/localhost
 /.dapp
 out
 cache_forge
+
+.ityfuzz
+.tmp
+build-info
