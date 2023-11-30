@@ -12,6 +12,7 @@ import 'hardhat-tracer';
 import 'hardhat-deploy-ethers';
 import 'hardhat-deploy-tenderly';
 import "@nomicfoundation/hardhat-foundry";
+import '@primitivefi/hardhat-dodoc';
 
 import { node_url, accounts, addForkConfiguration } from './utils/network';
 
@@ -94,6 +95,9 @@ const config: HardhatUserConfig = {
 		project: 'template-ethereum-contracts',
 		username: process.env.TENDERLY_USERNAME as string,
 	},
+	dodoc: {
+		exclude: ["@openzeppelin"]
+	}
 };
 
 export default config;
