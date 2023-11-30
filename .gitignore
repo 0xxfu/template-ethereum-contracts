@@ -18,6 +18,7 @@ pnpm-lock.yaml
 contractsInfo.json
 deployments/hardhat
 deployments/localhost
+deployed_addresses/hardhat
 
 /.dapp
 out
