@@ -2106,10 +2106,9 @@ follow-redirects@^1.12.1, follow-redirects@^1.14.0, follow-redirects@^1.14.4, fo
   resolved "https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.5.tgz#54d4d6d062c0fa7d9d17feb008461550e3ba8020"
   integrity sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==
 
-forge-std@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmmirror.com/forge-std/-/forge-std-1.1.2.tgz#f4a0eda103538d56f9c563f3cd1fa2fd01bd9378"
-  integrity sha512-Wfb0iAS9PcfjMKtGpWQw9mXzJxrWD62kJCUqqLcyuI0+VRtJ3j20XembjF3kS20qELYdXft1vD/SPFVWVKMFOw==
+"forge-std@github:foundry-rs/forge-std#v1.7.6":
+  version "1.7.6"
+  resolved "https://codeload.github.com/foundry-rs/forge-std/tar.gz/ae570fec082bfe1c1f45b0acca4a2b4f84d345ce"
 
 form-data@^2.2.0:
   version "2.5.1"

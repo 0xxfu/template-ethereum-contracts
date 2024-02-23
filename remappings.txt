@@ -1,6 +1,6 @@
 @openzeppelin/=node_modules/@openzeppelin/
 ds-test/=node_modules/ds-test/src/
-forge-std/=node_modules/forge-std/
+forge-std/=node_modules/forge-std/src/
 eth-gas-reporter/=node_modules/eth-gas-reporter/
 hardhat-deploy/=node_modules/hardhat-deploy/
 hardhat/=node_modules/hardhat/
